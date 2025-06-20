@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: n8n-disk-backup
+    runtime: docker
+    env: docker
+    plan: starter
+    disk:
+      name: n8n-disk
+      mountPath: /var/lib/n8n
